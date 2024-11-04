@@ -1,0 +1,23 @@
+@mixin theme-light-root {
+    --bg-primary: #f6f8fc;
+    --bg-secondary: #fff;
+    --bg-search: #fff;
+    --color-text: #363131;
+    --color-card-info: #f6f8fc;
+}  
+  
+@mixin theme-dark {
+    
+    --bg-primary: #dd092f;
+    --bg-secondary: #77b35b;
+    --color-text: #ffffff;
+    --color-card-info: #bfc66b;
+    --color-arrow: #f3f3f3;
+
+}
+  
+    
+    
+    
+  
+    

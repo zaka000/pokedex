@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import './themes';
+
+
+:root {
+  --font-family-base: 'Kumbh Sans', sans-serif;
+  @include theme-light-root();
+}
+
+.theme-dark {
+  @include theme-dark();
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: var(--font-family-base);
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  button {
+    font-family: 'Inter', sans-serif;
+  }
+}

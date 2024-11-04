@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 135px;
+    padding: 0 20px;
+    
+    .logo {
+        width: 192px;
+        height: 61px;
+        background: url("../../assets/images/pokedex.png") no-repeat;
+        background-size: contain;
+    }
+        
+    .threebars {
+        display: flex;
+        width: 24px;
+        height: 24px;
+    
+    }
+}
+    
+    

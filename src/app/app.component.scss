@@ -1,0 +1,56 @@
+.pokeball{
+    display: flex;
+    position: absolute;
+    width: 410px;
+    height: 412px;
+    top: -50px;  
+    left: -50px;
+    
+}
+.pokeball-2{
+    display: flex;
+    position: absolute;
+    width: 410px;
+    height: 412px;
+    top: -230px;   
+    right: 300px;
+    filter: brightness (2.9)
+}
+.pokeball-3{
+    display: flex;
+    position: absolute;
+    width: 410px;
+    height: 412px;
+    bottom: -100px; 
+    right: -100px;
+    filter: brightness (0.9);
+    
+    
+    
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    font-family: "Roboto", serif;
+    overflow-x: hidden;
+    background-color: var(--bg-primary);
+    
+     
+    .content-header{
+        z-index: 1;
+    }
+}
+        
+        
+
+.content{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+    
+}
+ 
+    
+

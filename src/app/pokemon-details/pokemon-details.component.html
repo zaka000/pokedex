@@ -1,0 +1,50 @@
+<div class="pokedex-details">
+   
+  
+    <div class="pokemon-card">
+        <img src="https://s3-alpha-sig.figma.com/img/85d5/1a17/73f17cab53c3c5e75253c50e3006cc1c?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kDOkw-vT1HEmZlO~jHM5I67yRRJVp3ZOC2RRSkdMT9YZ5jWrbobh5ftv-ojdDJJuHavG8Oeh6Bv5EGXpLxeIB9deXZj10wVALLI15fmcAhf7KK6ct3wc43rnnXUNj7IXkGus9aAQ28AN8JeKEn6~vzGR-TrdqTxfiSzYVisR0pWmWFXR8R0FnbFUWRqH-U882mbeB2-CXKCwtJpuT5XHLks54GsGB0Mo5He7XhDzyYX0br4zSiDlo9EJHORRiNguaQMelL6iJIEuR1NTT3KrooPM4GpGl3DCDu4EVE94ZxNUJdySAtSumSLJfLMH9seb4a8EyYR9smN9FZN3PeHtNg__" alt="" class="pokemon-sprite">
+      <!-- <img  [src]="pokemon.image" [alt]="'Card do ' + pokemon.name" class="pokemon-sprite" /> -->
+  
+      <div class="pokemon-info">
+        <h2>#{{ pokemon.id }}</h2>
+        <h2>{{ pokemon.name }}</h2>
+        <p>{{ pokemon.description }}</p>
+     
+  
+        <div class="attributes">
+          <div class="attribute">
+            <span>Height</span>
+            <p>{{ pokemon.height }} m</p>
+          </div>
+          <div class="attribute">
+            <span>Weight</span>
+            <p>{{ pokemon.weight }} kg</p>
+          </div>
+        </div>
+  
+        <h3>Stats</h3>
+        <div class="stats">
+          <div *ngFor="let stat of pokemon.stats" class="stat" [ngClass]="stat.name.toLowerCase()">
+            <span>{{ stat.name }}</span>
+            <p>{{ stat.value }}</p>
+          </div>
+        </div>
+  
+        <div class="abilities">
+          <h3>Abilities</h3>
+          <div *ngFor="let ability of pokemon.abilities" class="ability">
+            {{ ability }}
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="evolution">
+      <h3>Evolution</h3>
+      <div class="evolution-chain">
+        <img *ngFor="let evo of pokemon.evolution" [src]="evo.image" alt="{{ evo.name }}" />
+      </div>
+    </div>
+  </div>
+  
+

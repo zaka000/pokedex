@@ -1,0 +1,191 @@
+body{
+    font-weight: 700;
+}
+
+.pokedex-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    color: var( --color-text);
+    
+    
+  }
+  
+  .pokemon-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1071px;
+    justify-content: space-between ;
+    align-items: center;
+    background: var(--bg-secondary);
+    gap: 90px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    
+    
+
+        
+        .pokemon-sprite {
+            display: flex;
+            min-width: 200px;
+            min-height: 200px;
+        }
+        .pokemon-info {
+            display: flex;
+            flex-direction: column;
+        
+            .pokemon-info h2 {
+            font-size: 28px;
+            margin: 5px 0;
+            color: var(--color-text);
+            }
+            p{
+                display: flex;
+                max-width: 400px;
+            }
+        }
+    }
+            
+    .attributes,
+    .stats,
+    .abilities,
+    .evolution {
+      margin-top: 10px;
+    }
+    
+    .attributes {
+      display: flex;
+      gap: 28px;
+      height: 38px;
+      
+      
+  
+      .attribute{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: none ;
+        border-radius: 10px;
+        gap: 37px;
+        background-color: var(--color-card-info);
+        
+        
+        .attribute span {
+            display: flex;
+            font-weight: bold;
+            color: #777;
+        }
+        .attribute p {
+            display: flex;
+          font-size: 14px;
+          margin-top: 5px;
+          color: var(--color-text);
+        }
+          
+      }
+            
+      
+          
+    }
+    
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 10px; 
+        width: 300px;
+      
+    }
+    
+      .stats h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+  
+  
+    .stat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 162px;
+      flex: 1;
+      font-size: 17px;
+      padding: 2px;
+      border-radius: 5px;
+      color: #000000;
+      
+      
+      
+      
+    }
+    .stat.hp {
+      background-color: #DF2140;
+      height: 35px;
+      
+    }
+    
+    .stat.def {
+      background-color: #EECD3D;
+      height: 35px;
+    }
+    
+    .stat.spd {
+      background-color: #96DA83;
+      height: 35px;
+    }
+    
+    .stat.atk {
+      background-color: #FF994D;
+      height: 35px;
+    }
+    
+    .stat.spa {
+      background-color: #85DDFF;
+      height: 35px;
+    }
+    
+    .stat.SPD {
+      background-color: #FB94A8;
+      height: 35px;
+    }
+    
+    
+   
+    .abilities h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .ability {
+      display: inline-block;
+      background-color: var(--color-card-info);
+      color: var(--color-text);
+      font-size: 17px;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    .evolution {
+      margin-top: 40px;
+    }
+    .evolution h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .evolution-chain {
+      display: flex;
+      align-items: center;
+      
+    }
+    .evolution-chain img {
+        min-width: 100px;
+        margin: 0 10px;
+    }
+        
+           

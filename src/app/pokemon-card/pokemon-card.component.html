@@ -1,0 +1,31 @@
+<div class="pokemon-card">
+    <div class="pokemon-card-info">
+        <div class="pokemon-card__types">
+            <div
+                *ngFor="let type of pokemon.types"
+                [ngClass]="'pokemon-card__type--' + type.toLowerCase()"
+                class="pokemon-card__type">
+                {{ type }}
+            </div>
+        </div>
+        <div class="pokemon-card__name">
+            {{ pokemon.name }}
+        </div>
+        <div class="pokemon-card__about">
+            <p>{{ pokemon.about }}</p>
+        </div>
+        <div class="pokemon-card__more">
+            <a href="#" routerLink="pokemon-details/:id/">Know More</a>
+        </div>
+    </div>
+
+    <div class="pokemon-card-avatar">
+        <div class="pokemon-card__number">
+            #{{ pokemon.number | number: '3.0' }}
+        </div>
+        <div class="pokemon-card__image">
+            <img [src]="pokemon.image" [alt]="'Card do ' + pokemon.name"> 
+        </div>
+    </div>
+</div>
+
